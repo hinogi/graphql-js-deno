@@ -1,3 +1,5 @@
+Attempt to port graphql js to Deno with minimal changes
+
 # GraphQL.js
 
 The JavaScript reference implementation for GraphQL, a query language for APIs created by Facebook.
