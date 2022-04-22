@@ -1,0 +1,59 @@
+language: en
+useGitignore: true
+# TODO enableGlobDot: true
+ignorePaths:
+  # Excluded from spelling check
+  - cspell.yml
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - benchmark/github-schema.graphql
+  - benchmark/github-schema.json
+overrides:
+  - filename: '**/docs-old/APIReference-*.md'
+    ignoreRegExpList: ['/href="[^"]*"/']
+  - filename: 'website/**'
+    dictionaries:
+      - fullstack
+    words:
+      - clsx
+      - infima
+      - noopener
+      - noreferrer
+      - xlink
+
+ignoreRegExpList:
+  - u\{[0-9a-f]{1,8}\}
+
+words:
+  - graphiql
+  - sublinks
+  - instanceof
+
+  # Different names used inside tests
+  - Skywalker
+  - Leia
+  - Wilhuff
+  - Tarkin
+  - Artoo
+  - Threepio
+  - Odie
+  - Odie's
+  - Damerau
+  - Alderaan
+  - Tatooine
+  - astromech
+
+  # TODO: contribute upstream
+  - deno
+  - codecov
+
+  # TODO: remove bellow words
+  - QLID # GraphQLID
+  - QLJS # GraphQLJS
+  - iface
+  - Reqs
+  - FXXX
+  - XXXF
+  - bfnrt
+  - wrds
