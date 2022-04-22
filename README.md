@@ -1,4 +1,5 @@
-Attempt to port graphql js to Deno with minimal changes
+Attempt to port graphql js to Deno with minimal changes.
+`deno run --allow-env ./src/index.ts` should work.
 
 # GraphQL.js
 
